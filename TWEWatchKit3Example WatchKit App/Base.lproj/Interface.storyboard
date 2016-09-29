@@ -1,14 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TWEWatchKit3Example_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Send" id="Jco-UQ-RVD">
+                            <connections>
+                                <action selector="sendMessageWithSender:" destination="AgC-eL-Hgc" id="z67-Xb-67N"/>
+                            </connections>
+                        </button>
+                        <label width="1" alignment="center" text="Received" textAlignment="center" id="kiX-cL-iiU"/>
+                        <label width="1" alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="p8I-U3-hNQ">
+                            <fontDescription key="font" type="system" pointSize="60"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="countLabel" destination="p8I-U3-hNQ" id="AuL-4i-rwq"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>

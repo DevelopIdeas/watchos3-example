@@ -19,6 +19,7 @@
 		E2A5FD841D98695800FF76EB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5FD831D98695800FF76EB /* InterfaceController.swift */; };
 		E2A5FD861D98695800FF76EB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A5FD851D98695800FF76EB /* ExtensionDelegate.swift */; };
 		E2A5FD881D98695800FF76EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A5FD871D98695800FF76EB /* Assets.xcassets */; };
+		E2A5FD991D9871D600FF76EB /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A5FD981D9871D600FF76EB /* WatchConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		E2A5FD851D98695800FF76EB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		E2A5FD871D98695800FF76EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2A5FD891D98695800FF76EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A5FD981D9871D600FF76EB /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A5FD991D9871D600FF76EB /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +110,7 @@
 				E2A5FD731D98695800FF76EB /* TWEWatchKit3Example WatchKit App */,
 				E2A5FD821D98695800FF76EB /* TWEWatchKit3Example WatchKit Extension */,
 				E2A5FD5E1D98695800FF76EB /* Products */,
+				E2A5FD971D9871D600FF76EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +156,14 @@
 				E2A5FD891D98695800FF76EB /* Info.plist */,
 			);
 			path = "TWEWatchKit3Example WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E2A5FD971D9871D600FF76EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2A5FD981D9871D600FF76EB /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
